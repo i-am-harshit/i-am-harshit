@@ -2,11 +2,14 @@ import os
 import html
 
 def make_info_card():
-    # User details
+    # Senior Software Developer style details
     details = [
-        ("Role", "Senior Software Developer"),
-        ("Stack", "Javascript, react, next, angular, nodejs, python"),
-        ("     ", "mongobd, mysql, postgres, AI-augumented")
+        ("Title", "Senior Software Developer"),
+        ("Focus", "AI-Augmented Engineering & Architecture"),
+        ("Langs", "JavaScript (ES6+), TypeScript, Python"),
+        ("Front", "React, Next.js, Angular, TailwindCSS"),
+        ("Back ", "Node.js, Express, Python Ecosystem"),
+        ("Data ", "PostgreSQL, MySQL, MongoDB"),
     ]
     
     width = 490
@@ -34,7 +37,7 @@ def make_info_card():
         
     svg.append(f'<text x="{width/2}" y="{titlebar_h/2 + 4}" fill="{title_text}" font-size="11.5" text-anchor="middle">i-am-harshit@github: ~</text>')
     
-    y = titlebar_h + 30
+    y = titlebar_h + 24
     delay = 0.5
     for key, val in details:
         y += 24
@@ -49,7 +52,7 @@ def make_info_card():
             svg.append(f'<text x="{pad + 60}" y="{y}" fill="{ink}" font-size="14">  {html.escape(val)}</text>')
         svg.append('</g>')
         
-        delay += 0.3
+        delay += 0.2
         
     svg.append("</svg>")
     
