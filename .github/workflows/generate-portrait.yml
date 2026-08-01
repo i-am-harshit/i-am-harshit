@@ -1,0 +1,23 @@
+name: Generate Portrait
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r scripts/requirements.txt
+      - run: python scripts/prep_photo.py source-photo.png source-prepped.png
+      - run: python scripts/make_ascii_svg.py source-prepped.png avi-ascii.svg
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: generate ascii portrait [skip ci]"
+          file_pattern: "avi-ascii.svg source-prepped.png"
