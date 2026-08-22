@@ -1,22 +1,22 @@
 {
   "username": "i-am-harshit",
-  "generated_at": "2026-08-21T07:07:14Z",
+  "generated_at": "2026-08-22T06:59:03Z",
   "range": {
     "start": "2025-08-17",
+    "end": "2026-08-22"
+  },
+  "total_contributions": 1981,
+  "active_days": 266,
+  "avg_per_active_day": 7.4,
+  "current_streak": {
+    "length": 21,
+    "start": "2026-08-01",
     "end": "2026-08-21"
   },
-  "total_contributions": 1980,
-  "active_days": 265,
-  "avg_per_active_day": 7.5,
-  "current_streak": {
-    "length": 20,
-    "start": "2026-08-01",
-    "end": "2026-08-20"
-  },
   "longest_streak": {
-    "length": 20,
-    "start": "2026-01-04",
-    "end": "2026-01-23"
+    "length": 21,
+    "start": "2026-08-01",
+    "end": "2026-08-21"
   },
   "best_day": {
     "date": "2026-06-08",
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-08",
-      "total": 32
+      "total": 33
     }
   ],
   "days": [
@@ -1555,6 +1555,10 @@
     },
     {
       "date": "2026-08-21",
+      "count": 1
+    },
+    {
+      "date": "2026-08-22",
       "count": 0
     }
   ]
